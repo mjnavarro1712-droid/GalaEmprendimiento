@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gala de Emprendimiento 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #c5a021;
+        --dark-gold: #8a6d19;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      .font-cursive {
+        font-family: "Great+Vibes", cursive;
+      }
+
+      .bg-gold-gradient {
+        background: linear-gradient(
+          135deg,
+          #f9e3a3 0%,
+          #d4af37 50%,
+          #8a6d19 100%
+        );
+      }
+      .text-gold {
+        background: linear-gradient(
+          to right,
+          #bf953f,
+          #fcf6ba,
+          #b38728,
+          #fbf5b7,
+          #aa771c
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .hero-split {
+        background: linear-gradient(
+          to right,
+          rgba(212, 175, 55, 0.9) 50%,
+          rgba(0, 0, 0, 0.95) 50%
+        );
+      }
+      .btn-gold {
+        background: linear-gradient(to bottom, #d4af37, #8a6d19);
+        color: white;
+        transition: all 0.3s ease;
+      }
+      .btn-gold:hover {
+        filter: brightness(1.2);
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <nav
+      class="flex justify-between items-center p-6 border-b border-white/10 bg-black/90 sticky top-0 z-50"
+    >
+      <div class="text-xl font-bold tracking-widest text-gold uppercase">
+        Gala 2026
+      </div>
+      <div class="space-x-8 text-xs uppercase tracking-widest">
+        <a href="#tickets" class="hover:text-yellow-500 transition">Boletos</a>
+        <a href="#ubicacion" class="hover:text-yellow-500 transition"
+          >Ubicación</a
+        >
+      </div>
+    </nav>
+
+    <header
+      class="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
+    >
+      <div class="absolute inset-0 flex">
+        <div class="w-1/2 bg-gold-gradient opacity-90"></div>
+        <div class="w-1/2 bg-black"></div>
+      </div>
+
+      <div class="relative z-10 text-center px-4">
+        <h1
+          class="text-7xl md:text-9xl font-cursive mb-2 text-white drop-shadow-lg"
+        >
+          Gala de Emprendimiento
+        </h1>
+        <p
+          class="text-lg md:text-xl italic font-light tracking-widest mb-12 border-y border-white/20 py-4 inline-block"
+        >
+          "La noche donde las ideas se visten de gala"
+        </p>
+
+        <div
+          class="bg-black/40 backdrop-blur-sm p-8 rounded-sm border border-white/10 max-w-2xl mx-auto"
+        >
+          <p class="text-2xl font-bold mb-2">17 de Noviembre 2026</p>
+          <p class="text-gold uppercase tracking-widest mb-6">Foro Prisma</p>
+          <a
+            href="#tickets"
+            class="btn-gold px-10 py-4 inline-block font-bold uppercase tracking-tighter"
+            >Reservar Entrada</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section id="ubicacion" class="py-20 bg-zinc-950">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-gold text-3xl font-bold mb-8 uppercase tracking-widest">
+          Ubicación y Detalles
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="text-left space-y-6 border-l-2 border-gold pl-6">
+            <div>
+              <p class="text-gold font-bold uppercase text-sm">Dirección</p>
+              <p class="text-gray-300">
+                Avenida de los Laureles #88, Distrito de la Alianza, C.P. 01020
+              </p>
+            </div>
+            <div>
+              <p class="text-gold font-bold uppercase text-sm">Horario</p>
+              <p class="text-gray-300">
+                Recepción: 19:30 hrs | Inicio: 20:30 hrs
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-zinc-900 h-64 rounded shadow-2xl flex items-center justify-center border border-white/5"
+          >
+            <p class="text-gray-500 italic">[ Mapa Foro Prisma ]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tickets" class="py-20 bg-black">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2
+          class="text-center text-4xl font-bold mb-16 uppercase tracking-widest"
+        >
+          Adquiere tus Tickets
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div
+            class="border border-white/10 p-10 hover:border-gold/50 transition bg-zinc-900/50"
+          >
+            <h3 class="text-2xl font-bold mb-4">Acceso Diamante</h3>
+            <p class="text-gray-400 mb-8 leading-relaxed">
+              Incluye acceso a la gala completa, cena de tres tiempos y
+              networking de alto nivel.
+            </p>
+            <p class="text-3xl font-bold mb-8 text-gold">$2,500 MXN</p>
+            <button
+              class="w-full py-4 border border-gold text-gold hover:bg-gold hover:text-black font-bold transition"
+            >
+              Seleccionar
+            </button>
+          </div>
+
+          <div class="border-2 border-gold p-10 bg-zinc-900 relative">
+            <span
+              class="absolute top-0 right-0 bg-gold text-black px-4 py-1 text-xs font-bold uppercase"
+              >Más Exclusivo</span
+            >
+            <h3 class="text-2xl font-bold mb-4">Experiencia Premium</h3>
+            <p class="text-gray-400 mb-8 leading-relaxed">
+              Asientos preferenciales, barra libre premium y acceso exclusivo a
+              la zona de ponentes.
+            </p>
+            <p class="text-3xl font-bold mb-8 text-gold">$4,500 MXN</p>
+            <button class="w-full py-4 btn-gold font-bold transition">
+              Comprar VIP
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="py-12 border-t border-white/10 text-center text-gray-600 text-sm uppercase tracking-widest"
+    >
+      <p>&copy; 2026 Gala de Emprendimiento | Foro Prisma</p>
+    </footer>
+  </body>
+</html>
